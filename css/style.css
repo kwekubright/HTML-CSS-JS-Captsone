@@ -53,6 +53,23 @@ h1,
 /* Header */
 
 
+/* Program */
+.program-container .icon {
+  flex-basis: 20%;
+}
+
+.program-container .title {
+  flex-basis: 30%;
+}
+
+.program-container .description {
+  flex-basis: 100%;
+}
+
+.program-container .card {
+  background-color: #45454596;
+}
+
 /* Media Queries */
 @media screen and (min-width: 768px) {
 
