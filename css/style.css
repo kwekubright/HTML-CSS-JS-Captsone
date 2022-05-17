@@ -9,6 +9,12 @@
   color: #272a31;
 }
 
+/* Logo */
+.logo {
+  font-family: 'Cocogoose', sans-serif;
+  font-weight: 800;
+}
+
 /* Colors */
 .orange-text {
   color: #ec5242;
@@ -38,6 +44,7 @@
 .use-cocogoose {
   font-family: 'Cocogoose', sans-serif;
 }
+
 .use-lato {
   font-family: 'Lato', sans-serif;
 }
@@ -46,14 +53,34 @@ h1,
 .main-title {
   font-family: 'font-family: ''Cocogoose', sans-serif;
   font-weight: 700;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 40px;
+  margin-bottom: 16px;
 }
 
 /* Header */
+.jumbotron {
+  background-color: #ec5242;
+  height: 80vh;
+}
 
+.page-title {
+  font-size: 70px;
+}
+
+.devcamp-featured-image {
+  display: none;
+}
 
 /* Program */
+.main-program {
+  background-image: url('../images/black-pattern.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5vh 0;
+}
+
+
 .program-container .icon {
   flex-basis: 20%;
 }
@@ -71,10 +98,19 @@ h1,
 }
 
 /* Media Queries */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
 
+  /* Header */
   h1,
   .main-title {
-    font-size: 2rem;
+    font-size: 32px;
+  }
+
+  .devcamp-featured-image {
+    display: block;
+    position: absolute;
+    top: 17%;
+    right: 10%;
+    width: 35%;
   }
 }
