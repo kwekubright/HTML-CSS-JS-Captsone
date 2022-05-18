@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://kwekubright.github.io/portfolio/)
+[Live Demo Link](https://kwekubright.github.io/HTML-CSS-JS-Captsone/)
 
 ## Getting Started
 
