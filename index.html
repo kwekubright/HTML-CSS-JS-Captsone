@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Frontend Development Bootcamp</title>
+  <title>Home page - DevCAMP</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -17,7 +17,8 @@
   <header>
     <div class="social-icons-nav bg-black py-2 d-none d-sm-none d-md-none d-lg-block d-xl-block">
       <div class="container  d-flex justify-content-end align-items-baseline">
-        <a class="text-white me-3" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="text-white me-3" href="https://www.facebook.com/" target="_blank"><i
+            class="fab fa-facebook-f"></i></a>
         <a class="text-white me-3" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
         <a class="text-white me-3 non-social text-decoration-none" href="#">English</a>
         <a class="text-white me-3 non-social text-decoration-none" href="#" target="_blank">My Page</a>
@@ -51,13 +52,13 @@
               <a class="nav-link" href="#">Register</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#">Our Partners</a>
+              <a class="nav-link" href="#">Partners</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#">News & Updates</a>
+              <a class="nav-link" href="#">Updates</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#">Photo Gallery</a>
+              <a class="nav-link" href="#">Gallery</a>
             </li>
           </ul>
           <span class="navbar-text px-3">
@@ -72,13 +73,16 @@
     <div class="jumbotron jumbotron-fluid py-4">
       <div class="container h-100 d-flex flex-column justify-content-center">
         <h1 class="page-title display-4 use-cocogoose text-white text-uppercase">Frontend <br>DevCAMP 2022</h1>
-        <p class="lead text-white w-50">Learn to build a modern, responsive website with the latest HTML, CSS, and
-          JavaScript
-          technologies.</p>
+        <div class="bg-dark w-50 p-4 mb-4 bg-opacity-50 boot-desc">
+          <p class="lead text-white ">Learn to build a modern, responsive website with the latest HTML, CSS, and
+            JavaScript
+            technologies.</p>
+        </div>
         <h2 class="date use-cocogoose text-uppercase text-white">Mon, 16 May, 2022</h2>
         <p class="lead text-white">Venue: Zoom Video Conferencing App</p>
+
         <div>
-          <a href="#" class="btn btn-lg btn-outline-light">Register your interest</a>
+          <a href="#" class="btn btn-lg btn-outline-light mt-3">Register your interest</a>
         </div>
       </div>
       <img class="devcamp-featured-image" src="images/happy-girl.png" alt="Frontend stack of various webpages">
@@ -89,7 +93,9 @@
     <div class="container program-container py-5">
       <div class="row pb-5">
         <div class="col-12">
-          <h2 class="text-center text-uppercase text-white">Program</h2>
+          <div class="text-center section-title-holder">
+            <h2 class="text-white section-title">Program</h2>
+          </div>
         </div>
       </div>
       <div class="program-wrapper d-flex flex-column flex-lg-row flex-xl-row">
@@ -186,11 +192,13 @@
           </div>
         </div>
       </div>
-      <div class="call-to-action d-flex justify-content-center pt-lg-5 pt-xl-5">
+      <div class="call-to-action d-none d-md-flex d-lg-flex d-xl-flex justify-content-center pt-lg-5 pt-xl-5 ">
         <a href="#">
           <h5 class="text-white text-decoration-underline">SEE THE WHOLE PROGRAM</h5>
         </a>
       </div>
+
+      <a href="#" class="d-block d-md-none d-lg-none d-xl-none btn btn-lg bg-orange text-white rounded-0 py-4 m-auto mt-5 w-75">Register for DevCAMP</a>
   </section>
   <!--Speaker-->
   <section id="speakers" class="py-5">
@@ -198,103 +206,22 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="section-title text-center mb-5 pb-lg-4">
+            <div class="text-center mb-5 pb-lg-4 section-title-holder">
               <h2 class="text-black section-title">Speakers</h2>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 col-lg-6 col-xl-6 mb-lg-5 mb-xl-5">
-            <div class="speakers-slider ">
-              <div class="speaker-item d-flex">
-                <div class="speaker-img me-3">
-                  <img class="" src="images/speakers/ariel.png" alt="Speaker">
-                </div>
-                <div class="speaker-info">
-                  <h3 class="speaker-name fw-bold">
-                    <a href="#" class="text-decoration-none">
-                      <span>Ariel Camus</span>
-                    </a>
-                  </h3>
-                  <p class="speaker-designation fst-italic orange-text">
-                    <span>Founder, Microverse</span>
-                  </p>
-                  <p class="speaker-description">
-                    Ariel has lived and worked in 7 different countries including Spain, Argentina, USA, and Vietnam and
-                    has been coding since he was 12. He previously founded Tourist Eye.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 col-xl-6 mb-lg-5 mb-xl-5">
-            <div class="speakers-slider ">
-              <div class="speaker-item d-flex justify-content-between">
-                <div class="speaker-img me-3">
-                  <img class="" src="images/speakers/sirrie.png" alt="Speaker">
-                </div>
-                <div class="speaker-info">
-                  <h3 class="speaker-name fw-bold">
-                    <a href="#" class="text-decoration-none">
-                      <span>Sirrie Celles</span>
-                    </a>
-                  </h3>
-                  <p class="speaker-designation fst-italic orange-text">
-                    <span>Micronaut, Microverse</span>
-                  </p>
-                  <p class="speaker-description">
-                    Sirri is a software engineer and entrepreneur. She is currently taking the Microverse program and is
-                    working on building a new product called Sirri Social.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 col-xl-6 mb-lg-5 mb-xl-5">
-            <div class="speakers-slider">
-              <div class="speaker-item d-flex">
-                <div class="speaker-img me-3">
-                  <img class="" src="images/speakers/kevin.png" alt="Speaker">
-                </div>
-                <div class="speaker-info">
-                  <h3 class="speaker-name fw-bold">
-                    <a href="#" class="text-decoration-none">
-                      <span>Kevin Mwangi</span>
-                    </a>
-                  </h3>
-                  <p class="speaker-designation fst-italic orange-text">
-                    <span>Software Engineer, Microsoft</span>
-                  </p>
-                  <p class="speaker-description">
-                    Experienced Software Engineer with a demonstrated history of working in the information technology
-                    and services
-                    industry. Skilled in Javascript, HTML/CSS, Ruby, PHP, Java and C#.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 col-xl-6 mb-lg-5 mb-xl-5">
-            <div class="speakers-slider ">
-              <div class="speaker-item d-flex">
-                <div class="speaker-img me-3">
-                  <img class="" src="images/speakers/elon.png" alt="Speaker">
-                </div>
-                <div class="speaker-info">
-                  <h3 class="speaker-name fw-bold">
-                    <a href="#" class="text-decoration-none">
-                      <span>Elon Musk</span>
-                    </a>
-                  </h3>
-                  <p class="speaker-designation fst-italic orange-text">
-                    <span>CEO, Tesla</span>
-                  </p>
-                  <p class="speaker-description">
-                    Entrepreneur Elon Musk has achieved global fame as the chief executive of electric autos maker Tesla
-                    Inc. (TSLA), the CEO and lead designer of his space company SpaceX.
-                  </p>
-                </div>
-              </div>
+        <div id="hold-speakers" class="row"> </div>
+        <div class="row mt-3 d-md-none d-lg-none d-xl-none">
+          <div class="col-12">
+            <div class="call-to-action pt-lg-5 pt-xl-5">
+              <a id="show-more-speakers"
+                class="show-more-speakers btn btn-outline-dark w-100 d-flex align-items-baseline justify-content-center"
+                href="#">
+                <div class="me-2">More</div>
+                <i class="fa fa-angle-down orange-text"></i>
+              </a>
+
             </div>
           </div>
         </div>
@@ -303,13 +230,13 @@
 
   </section>
   <!--Partners-->
-  <section id="partners" class="py-5 partners-section">
+  <section id="partners" class="py-5 partners-section d-none d-md-block d-lg-block d-xl-block">
     <div class="partners-wrapper pb-lg-4">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="section-title text-center mb-5">
-              <h2 class="text-white">Partners</h2>
+            <div class="text-center mb-5 section-title-holder">
+              <h2 class="text-white section-title">Partners</h2>
             </div>
           </div>
         </div>
@@ -317,8 +244,7 @@
           <!-- parnert logos -->
           <div class="col-12 col-lg-12 col-xl-12">
             <div class="partners-slider ">
-              <div
-                class="partner-item d-flex flex-wrap flex-lg-nowrap flex-xl-nowrap justify-content-center align-items-center">
+              <div class="partner-item d-flex flex-wrap flex-lg-nowrap flex-xl-nowrap justify-content-center align-items-center">
                 <div class="partner-img w-25 me-3">
                   <img class="w-100" src="images/partners/microverse.png" alt="Partner microverse">
                 </div>
@@ -339,7 +265,7 @@
           </div>
   </section>
   <!--Footer-->
-  <footer class="py-5">
+  <footer class="py-5 d-none d-md-block d-lg-block d-xl-block">
     <div class="footer-wrapper">
       <div class="container">
         <div class="row">
@@ -362,6 +288,7 @@
     </div>
   </footer>
   <script type="text/javascript" src="js/mobile-menu.js"></script>
+  <script type="text/javascript" src="js/dynamic-speakers.js"></script>
 </body>
 
 </html>
