@@ -1,0 +1,27 @@
+{
+  "name": "html-css-js-captsone",
+  "version": "1.0.0",
+  "description": "Microverse HTML Curriculum Capstone project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwekubright/HTML-CSS-JS-Captsone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwekubright/HTML-CSS-JS-Captsone/issues"
+  },
+  "homepage": "https://github.com/kwekubright/HTML-CSS-JS-Captsone#readme",
+  "devDependencies": {
+    "hint": "^6.2.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
