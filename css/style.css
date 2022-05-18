@@ -13,13 +13,8 @@ body {
   overflow-x: hidden;
 }
 
-a:hover {
-  text-decoration: none;
-  color: #e95242;
-}
-
 button.navbar-toggler {
-  border: 0px;
+  border: 0;
   font-weight: 900;
   padding: 0;
 }
@@ -47,6 +42,11 @@ p,
 a,
 button {
   color: #272a31;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #e95242;
 }
 
 .orange-text {
@@ -84,7 +84,7 @@ button {
 
 h1,
 .main-title {
-  font-family: 'font-family: ''Cocogoose', sans-serif;
+  font-family: 'Cocogoose', sans-serif;
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 16px;
@@ -164,7 +164,7 @@ h1,
   padding-top: 30px;
 }
 
-.spearkers-wrapper .speaker-img>img {
+.spearkers-wrapper .speaker-img > img {
   box-shadow: 0 0 5px #717171;
   border: 3px solid white;
   width: 95px;
@@ -180,6 +180,7 @@ h1,
 }
 
 /* Other */
+/* stylelint-disable */
 .about .call-to-action {
   font-size: 106px;
   font-weight: 900;
@@ -191,6 +192,7 @@ h1,
   text-align: center;
 }
 
+/* stylelint-enable */
 .about .cta {
   width: 70%;
 }
@@ -216,7 +218,6 @@ h1,
   width: 100%;
   height: 100%;
   background-color: rgb(148 37 25 / 81%);
-
 }
 
 .prev-event-2 {
@@ -240,13 +241,11 @@ h1,
   width: 100%;
   height: 100%;
   background-color: rgb(148 37 25 / 81%);
-
 }
 
 .mobile-nav {
   display: flex !important;
   position: fixed;
-  background-color: #fff;
   width: 100%;
   margin: 0;
   top: 0;
@@ -290,7 +289,7 @@ h1,
 
 .section-title-holder::after {
   width: 6.25rem;
-  height: .1875rem;
+  height: 0.1875rem;
   background: #e95242;
   left: 37vw;
   content: "";
@@ -303,7 +302,6 @@ h1,
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
-
   /* Header */
   h1,
   .main-title {
@@ -336,10 +334,11 @@ h1,
     margin-left: 0;
   }
 
-  .spearkers-wrapper .speaker-img>img {
+  .spearkers-wrapper .speaker-img > img {
     width: 150px;
   }
 
+  /* stylelint-disable */
   .about .call-to-action {
     font-size: 150px;
     font-weight: 900;
@@ -350,6 +349,7 @@ h1,
     background-size: contain;
   }
 
+  /* stylelint-enable */
   .about .cta {
     width: 40%;
   }
@@ -365,7 +365,7 @@ h1,
     color: white;
   }
 
-  .nav-item>a:hover {
+  .nav-item > a:hover {
     color: #e95242 !important;
   }
 
@@ -380,14 +380,14 @@ h1,
   .m-hide {
     display: block;
   }
-  
+
   .section-title-holder::after {
     width: 6.25rem;
-      height: .1875rem;
-      background: #e95242;
-      left: 47vw;
-      content: "";
-      position: absolute;
+    height: 0.1875rem;
+    background: #e95242;
+    left: 47vw;
+    content: "";
+    position: absolute;
   }
 
   .boot-desc {

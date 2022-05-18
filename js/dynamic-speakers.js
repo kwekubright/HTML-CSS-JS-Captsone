@@ -34,14 +34,14 @@ const speakers = {
     photo: 'images/speakers/rejoice.png',
     title: 'Micronuat, Microverse',
     profile: 'Rejoice is a software engineer and entrepreneur. She is currently taking the Microverse program and is working on building a new product called Rejoice Social.',
-  }
-}
+  },
+};
 
 function displaySpeakers() {
   const speakersDiv = document.getElementById('hold-speakers');
   const speakerKeys = Object.keys(speakers);
   let buildHTML = '';
-  for (let i = 0; i < speakerKeys.length; i++) {
+  for (let i = 0; i < speakerKeys.length; i += 1) {
     const speaker = speakers[speakerKeys[i]];
     buildHTML
       += `
@@ -70,7 +70,7 @@ function displaySpeakers() {
   speakersDiv.innerHTML = buildHTML;
 }
 
-window.onload = () => { 
+window.onload = () => {
   displaySpeakers();
 };
 
@@ -83,9 +83,8 @@ showSpeakers.addEventListener('click', (e) => {
   // get elements with m-hide class
   const hide = document.querySelectorAll('.m-hide');
   // loop through the elements with m-hide class
-  for (let i = 0; i < hide.length; i++) {
+  for (let i = 0; i < hide.length; i += 1) {
     // remove the class m-hide
     hide[i].classList.remove('m-hide');
   }
-}
-);
+}, false);
