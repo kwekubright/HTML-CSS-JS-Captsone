@@ -47,7 +47,7 @@ Give a ⭐️ if you like this project!
 
  Hat tip to:
 - @microverseinc
-- @creativecommonskorea
+-  Cindy Shin on Behance
 - Flaticon.com
 - Pexels.com
 - Freepik.com
