@@ -15,6 +15,16 @@
 <body class="about">
   <!--- Navbar -->
   <header>
+    <div class="social-icons-nav bg-black py-2 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+      <div class="container  d-flex justify-content-end align-items-baseline">
+        <a class="text-white me-3" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="text-white me-3" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="text-white me-3 non-social text-decoration-none" href="#">English</a>
+        <a class="text-white me-3 non-social text-decoration-none" href="#" target="_blank">My Page</a>
+        <a class="text-white me-3 non-social text-decoration-none" href="#">Logout</a>
+      </div>
+    </div>
+  
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -22,19 +32,36 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand bootcamp-logo d-none d-sm-none d-md-none d-lg-block d-xl-block use-cocogoose"
-          href="#">DevCAMP</a>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+          href="index.html">DevCAMP</a>
+        <div class="collapse navbar-collapse d-flex justify-content-end d-none d-sm-none d-md-none d-lg-block d-xl-block"
+          id="navbarText">
+          <img src="images/close.png" class="close-navbar-mobile position-absolute" alt="Close menu">
+          <ul class="navbar-nav mb-2 mb-lg-0 float-end">
+            <li class="nav-item px-4 d-md-none d-lg-none d-xl-none">
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+            <li class="nav-item px-4">
+              <a class="nav-link active" aria-current="page" href="about.html">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Program</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Register</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Our Partners</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">News & Updates</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Photo Gallery</a>
             </li>
           </ul>
+          <span class="navbar-text px-3">
+            <a href="#" class="btn btn-outline-primary nav-cta">Register Today</a>
+          </span>
         </div>
       </div>
     </nav>
@@ -152,7 +179,7 @@
         <div class="row">
           <div class="col-6 col-sm-6 col-lg-4 col-xl-4 d-flex flex-column justify-content-center">
             <div class="footer-logo">
-              <h3 class="logo">Front DevCAMP</h3>
+              <h3 class="logo">DevCAMP</h3>
             </div>
           </div>
           <div class="col-6 col-sm-6 col-lg-8 col-xl-8 d-flex flex-column justify-content-center">
@@ -168,7 +195,7 @@
       </div>
     </div>
   </footer>
-
+<script type="text/javascript" src="js/mobile-menu.js"></script>
 </body>
 
 </html>

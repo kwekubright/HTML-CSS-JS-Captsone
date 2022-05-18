@@ -14,9 +14,9 @@ body {
 }
 
 .section-title {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 /* Logo */
@@ -75,13 +75,15 @@ h1,
 .main-title {
   font-family: 'font-family: ''Cocogoose', sans-serif;
   font-weight: 700;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 40px;
+  margin-bottom: 16px;
 }
 
 /* Header */
 .jumbotron {
   background-color: #ec5242;
+  background-image: url('../images/jumbo-bg.png');
+  background-size: cover;
   height: 80vh;
 }
 
@@ -91,7 +93,7 @@ h1,
 }
 
 .page-title {
-  font-size: 56px;
+  font-size: 3.5rem;
 }
 
 .devcamp-featured-image {
@@ -137,24 +139,24 @@ h1,
 /* Speakers */
 .spearkers-wrapper .speaker-img::before {
   content: "";
-  width: 5rem;
-  height: 5rem;
+  width: 80px;
+  height: 80px;
   background: #ec5242;
-  margin-left: -1.125rem;
+  margin-left: -18px;
   position: absolute;
-  margin-top: -1.125rem;
+  margin-top: -18px;
   z-index: -1;
 }
 
 .speaker-item {
-  margin-left: 1.25rem;
-  padding-top: 1.875rem;
+  margin-left: 20px;
+  padding-top: 30px;
 }
 
 .spearkers-wrapper .speaker-img>img {
-  box-shadow: 0 0 .3125rem #717171;
-  border: .1875rem solid white;
-  width: 9.375rem;
+  box-shadow: 0 0 5px #717171;
+  border: 3px solid white;
+  width: 150px;
 }
 
 /* Partners */
@@ -164,7 +166,7 @@ h1,
 
 /* Other */
 .about .call-to-action {
-  font-size: 106px;
+  font-size: 6.625rem;
   font-weight: 900;
   background-clip: text;
   -webkit-background-clip: text;
@@ -183,8 +185,8 @@ h1,
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 300px;
-  padding: 20px;
+  height: 18.75rem;
+  padding: 1.25rem;
 }
 
 .prev-event-1 .card-body {
@@ -207,8 +209,8 @@ h1,
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 300px;
-  padding: 20px;
+  height: 18.75rem;
+  padding: 1.25rem;
 }
 
 .prev-event-2 .card-body {
@@ -226,23 +228,64 @@ h1,
 
 }
 
+.mobile-nav {
+  display: flex !important;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  justify-content: center !important;
+  align-items: center;
+  height: 100vh;
+  z-index: 999;
+  padding: 30px;
+  flex-direction: column;
+  text-align: center;
+  background-color: #e95242eb;
+  color: #fff;
+  backdrop-filter: blur(0.375rem);
+  -webkit-backdrop-filter: blur(0.375rem);
+  -moz-backdrop-filter: blur(0.375rem);
+}
+
+.mobile-nav .nav-item a,
+.mobile-nav .nav-item a.active {
+  font-size: 23px;
+  color: #fff;
+}
+
+.mobile-nav .nav-cta {
+  width: 80vw;
+  border-color: #fff;
+  background-color: #fff;
+  color: #e95242;
+}
+
+.close-navbar-mobile {
+  top: 26px;
+  right: 26px;
+  font-size: 18px;
+}
+
 /* Media Queries */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
 
   /* Header */
   h1,
   .main-title {
-    font-size: 2rem;
+    font-size: 32px;
   }
 
   .page-title {
-    font-size: 70px;
+    font-size: 4.375rem;
   }
 
   .devcamp-featured-image {
     display: block;
     position: absolute;
-    top: 17%;
+    top: 21%;
     right: 10%;
     width: 35%;
   }
@@ -262,7 +305,7 @@ h1,
   }
 
   .about .call-to-action {
-    font-size: 150px;
+    font-size: 9.375rem;
     font-weight: 900;
     background-clip: text;
     -webkit-background-clip: text;
@@ -274,4 +317,28 @@ h1,
   .about .cta {
     width: 40%;
   }
+
+  header .nav-cta {
+    border: 0.3125rem solid #e95242 !important;
+    border-radius: 0;
+    color: #e95242;
+  }
+
+  header .nav-cta:hover {
+    background-color: #e95242;
+    color: white;
+  }
+
+  .nav-item>a:hover {
+    color: #e95242 !important;
+  }
+
+  .navbar-nav .nav-link.active {
+    color: #e95242 !important;
+  }
+
+  .social-icons-nav a.non-social {
+    font-size: 0.75rem;
+  }
+
 }
